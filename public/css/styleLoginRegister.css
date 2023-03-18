@@ -1,0 +1,73 @@
+@import url("colors.css");
+
+body {
+    font-family: "Titillium Web", sans-serif;
+    background-color: var(--color3);
+}
+
+body .card-body {
+    background-color: var(--color1);
+    border-radius: 15px;
+    border-color: var(--color5);
+}
+
+.btn {
+    background-color: var(--color2);
+    color: var(--color1);
+    font-weight: bold;
+    border-color: var(--color1);
+}
+
+.btn:hover {
+    transition: 2s;
+    background-color: var(--bg-black);
+    color: var(--text-gray-600);
+}
+
+.card {
+    background-color: var(--bg-black);
+    border-color: var(--bg-black);
+    border-radius: 10px;
+    border-width: 3px;
+}
+
+label {
+    color: var(--text-lightblue);
+}
+
+.form-control, .form-control:focus {
+    border-radius: 5px;
+    background-color: var(--bg-black);
+    border-color: var(--color1);
+    color: var(--text-gray-dark);
+}
+
+
+.error-message {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: var(--bg-danger);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

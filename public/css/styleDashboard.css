@@ -1,0 +1,118 @@
+@import url("colors.css");
+
+/* estilos gerais */
+body {
+    font-family: "Titillium Web", sans-serif;
+    background-color: var(--d-color1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: normal;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.container-fluid {
+    background-color: var(--d-color2);
+    border: 4px solid #4d4e89;
+    height: 90vh;
+    width: 160vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+/* estilos do menu */
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#sidebarMenu {
+    position: relative;
+    right: 8vh;
+    bottom: 2vh;
+    background-color: var(--d-color5);
+    height: 92vh;
+    width: 50vh;
+    border-left: 2px solid   #1d1b24;
+    border-bottom: 2px solid #1d1b24;
+    border-right: 1px solid  #1d1b24;
+    border-top: 1px solid    #1d1b24 ;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.nav-link {
+    color: var(--d-color4) !important;
+    position: relative;
+    left: 5vh;
+    bottom: 7vh;
+    margin-top: 1vh;
+    padding: 2vh;
+    background-color: var(--d-color3);
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 2px solid #16151c;
+    border-left: 2px solid #16151c;
+    box-shadow: 0px 4px 79px rgba(0, 0, 0, 0.42);
+    border-radius: 30px;
+    width: 20vh;
+}
+
+.nav-link:hover{
+    transition: 2s;
+    letter-spacing: 0.2em;
+    font-size: 12px;
+    background-color: var(--color3);
+    color: var(--color4) !important;
+}
+
+.nav-link:not(:hover){
+    transition: 2s;
+}
+
+i{
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
+
+/* estilos dos cards */
+.card {
+    margin-bottom: 20px;
+    background-color: var(--bg-card);
+    border-radius: 30px;
+    box-shadow: 0px 4px 79px rgba(0, 0, 0, 0.42);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.1rem;
+}
+
+
+h1{
+    background-color: var(--d-color5);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    text-align: center;
+}
+
+p,h2,h3,h4,h5 {
+    color: var(--color3);
+}
